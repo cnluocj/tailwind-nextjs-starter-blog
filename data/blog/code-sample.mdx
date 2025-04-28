@@ -1,38 +1,20 @@
 ---
-title: Sample .md file
-date: '2016-03-08'
-tags: ['markdown', 'code', 'features']
-draft: false
-summary: Example of a markdown file with code blocks and syntax highlighting
+title: 'Dify Trans Big File Problem'
+date: '2025-04-24'
+tags: ['dify']
 ---
 
-A sample post with markdown.
+## dify http 传输大文件 Server disconnected without sending a response.
 
-## Inline Highlighting
+https://github.com/langgenius/dify/issues/12098
+https://github.com/langgenius/dify/issues/12216
+After I removed the SSRF configuration, it worked.
 
-Sample of inline highlighting `sum = parseInt(num1) + parseInt(num2)`
+  #SSRF_PROXY_HTTP_URL: ${SSRF_PROXY_HTTP_URL:-http://ssrf_proxy:3128}
+  #SSRF_PROXY_HTTPS_URL: ${SSRF_PROXY_HTTPS_URL:-http://ssrf_proxy:3128}
 
-## Code Blocks
+![remove-ssrf](public/static/images/remove-ssrf.png)
+  
+注释掉 docker-compose.yaml 中的 ssrf proxy 配置
 
-Some Javascript code
-
-```javascript
-var num1, num2, sum
-num1 = prompt('Enter first number')
-num2 = prompt('Enter second number')
-sum = parseInt(num1) + parseInt(num2) // "+" means "add"
-alert('Sum = ' + sum) // "+" means combine into a string
-```
-
-Some Python code 🐍
-
-```python
-def fib():
-    a, b = 0, 1
-    while True:            # First iteration:
-        yield a            # yield 0 to start with and then
-        a, b = b, a + b    # a will now be 1, and b will also be 1, (0 + 1)
-
-for index, fibonacci_number in zip(range(10), fib()):
-     print('{i:3}: {f:3}'.format(i=index, f=fibonacci_number))
-```
+很神奇的是，如果dify是https就没问题
