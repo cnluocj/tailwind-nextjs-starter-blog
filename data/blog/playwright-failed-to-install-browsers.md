@@ -1,7 +1,7 @@
 ---
-title: Playwright Failed to Install Browsers
-date: 2025-03-27
-tags: [playwright, docker, firecrawl, browsers]
+title: 'Playwright Failed to Install Browsers'
+date: '2025-03-27'
+tags: ['playwright', 'docker', 'firecrawl', 'browsers']
 ---
 
 > playwright Failed to install browsers

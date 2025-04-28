@@ -1,7 +1,7 @@
 ---
-title: 在 mac 中使用 host.docker.internal 访问容器
-date: 2025-03-15
-tags: [docker]
+title: '在 mac 中使用 host.docker.internal 访问容器'
+date: '2025-03-15'
+tags: ['docker']
 ---
 
 在 mac 中默认使用 host.docker.internal 就能容器间就能相互访问

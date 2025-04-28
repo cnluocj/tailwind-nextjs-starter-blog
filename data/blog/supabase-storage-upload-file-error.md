@@ -1,7 +1,7 @@
 ---
-title: Supabase Storage Upload File Error
-date: 2025-04-22
-tags: [supabase]
+title: 'Supabase Storage Upload File Error'
+date: '2025-04-22'
+tags: ['supabase']
 ---
 
 ## supabase 存储无法上传文件问题

@@ -1,7 +1,7 @@
 ---
-title: Dify Trans Big File Problem
-date: 2025-04-24
-tags: [dify]
+title: 'Dify Trans Big File Problem'
+date: '2025-04-24'
+tags: ['dify']
 ---
 
 ## dify http 传输大文件 Server disconnected without sending a response.
