@@ -1,5 +1,5 @@
 ---
-title: 'Supabase Storage Upload File Error'
+title: 'supabase 存储无法上传文件问题'
 date: '2025-04-22'
 tags: ['supabase']
 ---
