@@ -9,7 +9,7 @@ tags: ['docker', 'dns', 'letsencrypt', '故障排查']
 在一台新配置的 VPS 上，使用 Docker 部署服务时遇到了两个问题：
 
 1. Docker 容器内 DNS 解析失败，导致容器内无法访问域名。
-2. 使用 `kejilion.sh`（实为基于 Docker 的 nginx 和 acme.sh）申请证书失败，提示域名解析失败。
+2. 使用 `kejilion.sh` 申请证书失败，提示域名解析失败。
 
 ## 问题表现
 
@@ -44,22 +44,13 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='acme-v02.api.lets
 
 ## 解决方案
 
-### 1. 修复 `/etc/docker/daemon.json`
+### 1. 指定dns `/etc/docker/daemon.json`
 
 查看配置发现语法错误，例如：
 
 ```json
 {
-  "dns": ["8.8.8.8"] "log-level": "error"
-}
-```
-
-应该改为：
-
-```json
-{
-  "dns": ["8.8.8.8"],
-  "log-level": "error"
+  "dns": ["8.8.8.8"]
 }
 ```
 
