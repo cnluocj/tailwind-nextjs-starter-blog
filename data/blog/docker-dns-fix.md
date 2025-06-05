@@ -46,8 +46,6 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='acme-v02.api.lets
 
 ### 1. 指定dns `/etc/docker/daemon.json`
 
-查看配置发现语法错误，例如：
-
 ```json
 {
   "dns": ["8.8.8.8"]
