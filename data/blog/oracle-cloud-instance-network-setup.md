@@ -1,6 +1,6 @@
 ---
 title: 'Oracle Cloud 实例开通并打通网络端口全流程'
-date: '2025-01-13'
+date: '2025-07-10'
 tags: ['Oracle Cloud', 'OCI', 'VCN', '网络配置', 'iptables', '云服务器']
 draft: false
 summary: '详细记录在 Oracle Cloud（OCI）上从实例创建到成功开放网络端口的完整步骤，包括 VCN 配置、Security List 设置和实例内部防火墙配置，便于今后复用或写成文档。'
