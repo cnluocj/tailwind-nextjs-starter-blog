@@ -1,6 +1,6 @@
 ---
 title: 'AI应用WebSocket连接中断问题解决记录'
-date: '2025-01-27'
+date: '2025-08-12'
 tags: ['WebSocket', 'Next.js', 'CopilotKit', 'Caddy', '反向代理', '连接管理', 'React Hooks']
 draft: false
 summary: '记录了医学文章生成AI应用中WebSocket连接中断导致的跨域跳转报错问题，以及完整的解决方案实施过程。'
